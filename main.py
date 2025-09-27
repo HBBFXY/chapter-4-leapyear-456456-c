@@ -17,3 +17,4 @@ else:
 print("不是闰年")
 except Exception:
 print("输入错误")
+print(f"[DEBUG] 输入={year_str}")
