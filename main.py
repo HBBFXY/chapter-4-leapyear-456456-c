@@ -1,16 +1,15 @@
 def is_leap_year(year: int) -> bool:
-"""判断是否为闰年"""
+"""Check if a year is a leap year"""
 return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
 
 if **name** == "**main**":
 try:
 year_str = input().strip()
-year = int(year_str)  # 尝试转换为整数
+year = int(year_str)
 if is_leap_year(year):
-print("是闰年")
+print("Leap year")
 else:
-print("不是闰年")
+print("Not a leap year")
 except Exception:
-print("输入错误")
-
+print("Invalid input")
 
