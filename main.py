@@ -8,4 +8,12 @@ year_str = input().strip()
 if not year_str:
 print("输入错误")
 else:
-year =
+year = int(year_str)
+if year < 0:
+print("不是闰年")
+elif is_leap_year(year):
+print("是闰年")
+else:
+print("不是闰年")
+except Exception:
+print("输入错误")
